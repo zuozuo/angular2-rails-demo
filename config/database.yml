@@ -1,0 +1,17 @@
+defaults: &defaults
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: 'zuozuo'
+
+development:
+  <<: *defaults
+  database: angular2_rails_demo
+
+test: &test
+  <<: *defaults
+  database: angular2_rails_demo_test
+
+production:
+  <<: *defaults
+  database: angular2_rails_demo_test_prod
